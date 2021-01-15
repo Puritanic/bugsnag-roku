@@ -206,8 +206,8 @@ function createDevicePayload()
 
 	device = {
 		connection: deviceInfo.GetConnectionType(),
-		generalMemoryLevel: deviceInfo.GetGeneralMemoryLevel(),
 		locale: deviceInfo.GetCurrentLocale(),
+		memoryLevel: deviceInfo.GetGeneralMemoryLevel(),
 		model: deviceInfo.GetModel(),
 		time: getNowISO(),
 		tts: getAudioGuideStatusAsString()
